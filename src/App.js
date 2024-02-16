@@ -1,4 +1,5 @@
 import './App.css';
+import ProductListPage from './pages/ProductListPage';
 
 function App() {
   return (
@@ -6,7 +7,7 @@ function App() {
       <header className="App-header">
         header
       </header>
-      
+      <ProductListPage />
     </div>
   );
 }
