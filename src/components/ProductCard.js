@@ -5,9 +5,19 @@ const ProductCard = ({ product }) => {
   return (
     <div>
       <Thumbnail src={product.imgSrc} alt="product thumbnail" />
-      <Brand>{product.brand.nameKr}</Brand>
+      <Brand>{product.brand.nameEn}</Brand>
       <Title>{product.name}</Title>
-      <Price>{product.originalPrice}/{product.price}</Price>
+      <Price>
+        <span style={{
+          textDecoration: 'line-through',
+          color: 'red'
+        }}>
+          ￦{product.originalPrice}
+        </span>
+        <span>
+          &nbsp;￦{product.price}
+        </span>
+      </Price>
     </div>
   )
 }
@@ -28,7 +38,7 @@ const Title = styled.div`
   margin-bottom: 5px;
 `;
 const Price = styled.div`
-font-size: 1.0rem;
+  font-size: 0.9rem;
   font-weight: 700;
   margin-top: 10px;
   margin-bottom: 5px;

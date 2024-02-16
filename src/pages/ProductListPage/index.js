@@ -20,7 +20,13 @@ const ProductListPage = () => {
 
   return (
     <>
-        <h2>Trending</h2>
+        <h2 style={{ 
+            display: 'block', 
+            textAlign:'center',
+            marginTop: '3rem',
+            marginBottom: '3rem'
+            }}> Trending
+        </h2>
         <StyledProductListPage>
             {products.map(product => (
                 <ProductCard key={product.id} product={product} />
