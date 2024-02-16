@@ -1,15 +1,16 @@
 import './App.css';
+import HeaderPage from './pages/HeaderPage';
 import ProductListPage from './pages/ProductListPage';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        header
-      </header>
+      <HeaderPage />
       <ProductListPage />
     </div>
   );
 }
+
+
 
 export default App;
