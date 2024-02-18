@@ -1,18 +1,32 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
+import SignupPage from '../SignupPage';
 
 const HeaderPage = () => {
   return (
     <HeaderContainer>
-        <Logo>벌렁</Logo>
-        <Brand>Brand</Brand>
+        <Link to="/">
+            <Logo>벌렁</Logo>
+        </Link>
+        <Link to="/">
+            <Brand>Brand</Brand>
+        </Link>
         <HeaderIcon>
-            <Cart>장바구니</Cart>
-            <Login>회원가입</Login>
+            <Link to="/">
+                <span>장바구니</span>
+            </Link>
+            <Link to="/sign-up">
+                <span>회원가입</span>
+            </Link>
+            <Link to="/">
+                <span>로그인</span>
+            </Link>
         </HeaderIcon>
     </HeaderContainer>
   )
 }
+
 
 const HeaderContainer = styled.header`
     position: sticky;

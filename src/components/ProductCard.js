@@ -12,10 +12,10 @@ const ProductCard = ({ product }) => {
           textDecoration: 'line-through',
           color: 'red'
         }}>
-          ￦{product.originalPrice}
+          ￦{product.originalPrice.toLocaleString()}
         </span>
         <span>
-          &nbsp;￦{product.price}
+          &nbsp;￦{product.price.toLocaleString()}
         </span>
       </Price>
     </div>

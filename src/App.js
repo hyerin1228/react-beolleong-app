@@ -3,6 +3,7 @@ import HeaderPage from './pages/HeaderPage';
 import ProductListPage from './pages/ProductListPage';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import ProductDetail from './components/ProductDetail'; 
+import SignupPage from './pages/SignupPage';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
           <Route path="/" element={<ProductListPage />} />
           <Route path="/products" element={<ProductListPage />} />
           <Route path="/products/:productId" element={<ProductDetail />} />
+          <Route path="/sign-up" element={<SignupPage />} />
         </Routes>
       </div>
     </BrowserRouter>

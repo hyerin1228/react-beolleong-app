@@ -34,11 +34,11 @@ const ProductDetail = () => {
                 <InfoContainer>
                     <InfoRow>
                         <Label>정가</Label>
-                        <Price isOriginal>{product.originalPrice}</Price>
+                        <Price isOriginal>{product.originalPrice.toLocaleString()}</Price>
                     </InfoRow>
                     <InfoRow>
                         <Label>판매가</Label>
-                        <Price>{product.price}</Price>
+                        <Price>{product.price.toLocaleString()}</Price>
                     </InfoRow>
                     <InfoRow>
                         <Label>배송</Label>
