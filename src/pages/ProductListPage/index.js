@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import ProductCard from '../../components/ProductCard';
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 
 const ProductListPage = () => {
@@ -29,7 +30,9 @@ const ProductListPage = () => {
         </h2>
         <StyledProductListPage>
             {products.map(product => (
-                <ProductCard key={product.id} product={product} />
+                <Link to={`/products/${product.id}`}>
+                    <ProductCard key={product.id} product={product} />
+                </Link>
             ))}
         </StyledProductListPage>
     </>
@@ -65,6 +68,11 @@ const StyledProductListPage = styled.div`
 
     @media (min-width: 1280px) { /* xl:grid-cols-6에 해당 */
     grid-template-columns: repeat(6, minmax(0, 1fr));
+    }
+
+    a {
+        text-decoration: none;
+        color: inherit;
     }
 `;
 
