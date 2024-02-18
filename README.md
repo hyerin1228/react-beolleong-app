@@ -1,4 +1,5 @@
-![README](src/images/클론코딩.png)
+<img width="386" alt="image" src="https://github.com/hyerin1228/react-beolleong-app/assets/84621142/2f75d13d-9a77-42f4-aaf4-0e457d3183d5">
+
 <img width="383" alt="image" src="https://github.com/hyerin1228/react-beolleong-app/assets/84621142/273a6527-d7e0-485b-b5f3-dfaa689aa9fc">
 
 
